@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 2720870112190440566}
   - component: {fileID: 3573295054751067902}
   - component: {fileID: 2750320509952339017}
-  - component: {fileID: 224162387242016683}
   - component: {fileID: 9062120321774770922}
-  m_Layer: 0
-  m_Name: CheckPoint
+  m_Layer: 8
+  m_Name: CheckPointCast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2689278841896244116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.84, y: -2.39, z: 0}
-  m_LocalScale: {x: 2.09, y: 3.22, z: 1}
+  m_LocalScale: {x: 1.02, y: 2.74, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -111,33 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &224162387242016683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2689278841896244116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836b35b6932960a4b939e46afc4b456f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _reached:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9062120321774770922}
-        m_TargetAssemblyTypeName: ColorSetter, Assembly-CSharp
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &9062120321774770922
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,21 @@ public class CollectPoints : MonoBehaviour
 {
 	private CheckedPoint[] _checkedPoints;
 
+	private bool _collectedAllPoints;
+
+	private void FixedUpdate()
+	{
+		_checkedPoints = gameObject.GetComponentsInChildren<CheckedPoint>();
+
+		foreach (CheckedPoint point in _checkedPoints)
+		{
+			if (!point.GetCheckedPoint())
+			return;
+		}
+				
+		Debug.Log("Пройдены все контрольный точки");
+	}
+
 	private void OnEnable()
 	{
 		Debug.Log("Меня вызвали OnEnable");

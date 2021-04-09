@@ -26,4 +26,9 @@ public class CheckedPoint : MonoBehaviour
 			_reached.Invoke();
 		}
 	}
+
+	public bool GetCheckedPoint()
+	{
+		return IsReached;
+	}
 }
